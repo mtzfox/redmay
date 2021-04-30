@@ -8,6 +8,32 @@
   left: -200vw;
 }
 
+.tabset {
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 !important;
+  }
+  button.accordion {
+    flex-flow: row wrap;
+  }
+
+  .container:first-child button.accordion {
+    padding: 1em 0.5em 0.5em;
+  }
+
+  button.accordion .title {
+    width: 100%;
+    flex: 1 0 auto;
+  }
+  button.accordion .date {
+    width: auto;
+    flex: 1 0 auto;
+  }
+}
+
 .tabset .tab-panel {
   display: none;
 }
@@ -127,23 +153,25 @@ button.accordion .title {
   width: 50%;
   font-weight: 600;
   text-transform: capitalize;
+  color: #de1a2b;
 }
 
 button.accordion .date {
-  color: #de1a2b;
+  color: #000;
   margin: 0 auto;
   font-weight: 600;
 }
 
 button.accordion:after {
   font-family: FontAwesome;
-  content: "\f150";
+  content: "\f0d7";
   font-family: "fontawesome";
   font-size: 18px;
+  color: #de1a2b;
 }
 
 button.accordion.is-open:after {
-  content: "\f151";
+  content: "\f0d8";
 }
 
 button.accordion:hover,
@@ -157,9 +185,13 @@ button.accordion.is-open {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
+  text-align: justify;
 }
 
 .accordion-content .speakers {
   display: block;
+}
+
+.accordion-content > p:first-child {
   font-weight: bold;
 }

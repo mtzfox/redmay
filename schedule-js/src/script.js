@@ -1,3 +1,5 @@
+
+
 const accordionBtns = document.querySelectorAll(".accordion");
 
 accordionBtns.forEach((accordion) => {

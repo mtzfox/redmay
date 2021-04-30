@@ -3,39 +3,40 @@
 /*
  CSS for the main interaction
 */
+
 .tabset > input[type="radio"] {
-	position: absolute;
-	left: -200vw;
+  position: absolute;
+  left: -200vw;
 }
 
 .tabset {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
-	body {
-		padding: 0 !important;
-	}
-	button.accordion {
-		flex-flow: row wrap;
-	}
-	
-	.container:first-child button.accordion {
-		padding: 1em 0.5em 0.5em;
-	}
-	
-	button.accordion .title {
-		width: 100%;
-		flex: 1 0 auto;
-	}
-	button.accordion .date {
-		width: auto;
-		flex: 1 0 auto;
-	}
+  body {
+    padding: 0 !important;
+  }
+  button.accordion {
+    flex-flow: row wrap;
+  }
+
+  .container:first-child button.accordion {
+    padding: 1em 0.5em 0.5em;
+  }
+
+  button.accordion .title {
+    width: 100%;
+    flex: 1 0 auto;
+  }
+  button.accordion .date {
+    width: auto;
+    flex: 1 0 auto;
+  }
 }
 
 .tabset .tab-panel {
-	display: none;
+  display: none;
 }
 
 .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
@@ -44,60 +45,60 @@
 .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
 .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
 .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
-	display: block;
-	border: 1px solid #ccc;
+  display: block;
+  border: 1px solid #ccc;
 }
 
 /*
  Styling
 */
 body {
-	font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
-	color: #333;
-	font-weight: 300;
+  font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+  color: #333;
+  font-weight: 300;
 }
 
 .tabset > label {
-	position: relative;
-	display: inline-block;
-	padding: 15px 15px 25px;
-	border: 1px solid transparent;
-	border-bottom: 0;
-	cursor: pointer;
-	font-weight: 600;
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 .tabset > label::after {
-	content: "";
-	position: absolute;
-	left: 15px;
-	bottom: 10px;
-	width: 22px;
-	height: 4px;
-	background: #8d8d8d;
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
 }
 
 .tabset > label:hover,
 .tabset > input:focus + label {
-	color: #DE1A2B;
+  color: #de1a2b;
 }
 
 .tabset > label:hover::after,
 .tabset > input:focus + label::after,
 .tabset > input:checked + label::after {
-	background: #DE1A2B;
+  background: #de1a2b;
 }
 
 .tabset > input:checked + label {
-	border-color: #ccc;
-	border-bottom: 1px solid #fff;
-	margin-bottom: -1px;
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
 }
 
 .tab-panel {
-	padding: 30px 0;
-	border-top: 1px solid #ccc;
-	height: 100%;
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+  height: 100%;
 }
 
 /*
@@ -106,92 +107,86 @@ body {
 *,
 *:before,
 *:after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	padding: 30px;
+  padding: 30px;
 }
 
 .tabset {
-	max-width: 65em;
+  max-width: 65em;
 }
 
-/* --- Carousel --- */
-/* body {
-	background-color: #6DC4F4;
-}h1 { 
-     color:white;
- 
-} */
+/* Accordion */
 
 .container {
-	width: 95%;
-	max-width: 1000px;
-	margin: 2% auto;
+  width: 95%;
+  max-width: 1000px;
+  margin: 2% auto;
 }
 
 button.accordion {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	background-color: white;
-	border: 0;
-	border-bottom: 1px solid gray;
-	outline: none;
-	text-align: left;
-	padding: 50px 0.5em 0.5em;
-	font-size: 18px;
-	color: #333;
-	cursor: pointer;
-	transition: background-color 0.3s linear;
-	flex-basis: 60%;
-	align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  border: 0;
+  border-bottom: 1px solid gray;
+  outline: none;
+  text-align: left;
+  padding: 50px 0.5em 0.5em;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s linear;
+  flex-basis: 60%;
+  align-items: flex-end;
 }
 
 button.accordion .title {
-	width: 50%;
-	font-weight: 600;
-	text-transform: capitalize;
-	color: #DE1A2B;
+  width: 50%;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #de1a2b;
 }
 
 button.accordion .date {
-	color: #000;
-	margin: 0 auto;
-	font-weight: 600;
+  color: #000;
+  margin: 0 auto;
+  font-weight: 600;
 }
 
 button.accordion:after {
-	font-family: FontAwesome;
-	content: "\f0d7";
-	font-family: "fontawesome";
-	font-size: 18px;
-	color: #DE1A2B;
+  font-family: FontAwesome;
+  content: "\f0d7";
+  font-family: "fontawesome";
+  font-size: 18px;
+  color: #de1a2b;
 }
 
 button.accordion.is-open:after {
-	content: "\f0d8";
+  content: "\f0d8";
 }
 
 button.accordion:hover,
 button.accordion.is-open {
-	background-color: #white;
+  background-color: #fff;
 }
 
 .accordion-content {
-	background-color: light-gray;
-	padding: 0 20px;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.2s ease-in-out;
-	text-align: justify;
+  background-color: light-gray;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+  text-align: justify;
 }
 
 .accordion-content .speakers {
-	display: block;
+  display: block;
 }
 
 .accordion-content > p:first-child {
-	font-weight: bold;
+  font-weight: bold;
 }

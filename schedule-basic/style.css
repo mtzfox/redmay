@@ -11,7 +11,7 @@ section {
 
 .container {
   max-width: 960px;
-  margin: 0 auto;
+  margin: auto 5px;
 }
 
 @media (max-width: 768px) {
@@ -109,10 +109,10 @@ section {
   line-height: 1.2;
   padding-bottom: 5%;
   margin-bottom: 5%;
+  box-sizing: border-box;
   border-style: solid;
   border-color: lightgrey;
-  border-width: 2px 2px 2px 2px;
-  border-box: none;
+  border-width: 2px;
 }
 
 .accordion-content a {

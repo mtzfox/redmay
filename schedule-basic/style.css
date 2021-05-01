@@ -16,13 +16,19 @@ section {
 
 @media (max-width: 768px) {
   .accordion-heading .title {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .accordion-heading .title,
   .accordion-heading .date {
     flex-basis: 100%;
-    text-align: center;
   }
+  .accordion-heading,
+  .accordion-heading .title,
+  .accordion-heading .date,
+  .accordion-content p:first-child {
+    text-align: center !important;
+  }
+
   .container {
     padding: 0 0;
     text-align: justify;
@@ -42,7 +48,6 @@ section {
   justify-content: space-between;
   background-color: white;
   border: 0;
-  border-bottom: 1px solid gray;
   text-align: left;
   padding: 1em 0em 0.5em;
   font-size: 1.3rem;
@@ -58,7 +63,6 @@ section {
   color: #de1a2b;
   flex: 2 2;
   text-align: left;
-  line-height: 1.2;
   text-decoration: none;
   flex: 1 1 auto;
 }
@@ -108,6 +112,11 @@ section {
   text-align: left;
   font-size: 16px;
   line-height: 1.2;
+  padding-bottom: 5%;
+  margin-bottom: 5%;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 2px 2px 2px 2px;
 }
 
 .accordion-content a {

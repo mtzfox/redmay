@@ -14,9 +14,9 @@ section {
   margin: auto 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 610px) {
   .accordion-heading .title {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   .accordion-heading .title,
   .accordion-heading .date {
@@ -110,7 +110,6 @@ section {
   text-align: left;
   font-size: 16px;
   line-height: 1.2;
-  padding-bottom: 5%;
   margin-bottom: 5%;
   box-sizing: border-box;
   border-style: solid;

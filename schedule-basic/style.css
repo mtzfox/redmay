@@ -47,7 +47,6 @@ section {
   padding: 1em 0em 0.5em;
   font-size: 1.3rem;
   color: #333;
-  cursor: pointer;
   flex-basis: 60%;
   align-items: flex-end;
 }
@@ -57,11 +56,40 @@ section {
   font-weight: 600;
   text-transform: capitalize;
   color: #de1a2b;
+  flex: 2 2;
+  text-align: left;
+  line-height: 1.2;
+  text-decoration: none;
+  flex: 1 1 auto;
+}
+
+.accordion-heading a.title {
+  width: 50%;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #de1a2b;
+  text-align: left;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.accordion-heading a.title:after {
+  font-family: FontAwesome;
+  content: " \f35d";
+  font-family: "fontawesome";
+  font-size: 14px;
+  position: relative;
+  bottom: 3px;
+  left: 5px;
+  font-weight: 300;
+  color: #de1a2b;
 }
 
 .accordion-heading .date {
   color: #000;
   font-weight: 600;
+  flex: 1 1 auto;
+  text-align: right;
 }
 
 /*

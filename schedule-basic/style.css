@@ -11,7 +11,7 @@ section {
 
 .container {
   max-width: 960px;
-  margin: 1% auto;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -30,16 +30,11 @@ section {
   }
 
   .container {
-    padding: 0 0;
     text-align: justify;
   }
   .accordian-content {
     font-size: 12px;
   }
-}
-
-.container {
-  padding: 0 1em;
 }
 
 .accordion-heading {
@@ -117,6 +112,7 @@ section {
   border-style: solid;
   border-color: lightgrey;
   border-width: 2px 2px 2px 2px;
+  border-box: none;
 }
 
 .accordion-content a {
